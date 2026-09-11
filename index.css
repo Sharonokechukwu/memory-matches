@@ -1,0 +1,169 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+
+    font-family: Arial, sans-serif;
+
+    background: #111827;
+
+    color: white;
+
+    text-align: center;
+
+}
+
+
+.game-container {
+
+    width: 90%;
+
+    max-width: 600px;
+
+    margin: 30px auto;
+
+}
+
+
+h1 {
+
+    margin-bottom: 10px;
+
+}
+
+
+.game-info {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    background: #1f2937;
+
+    padding: 15px 25px;
+
+    border-radius: 10px;
+
+    margin: 20px 0;
+
+    font-size: 18px;
+
+}
+
+
+/* GAME BOARD */
+
+#gameBoard {
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 10px;
+
+}
+
+
+/* CARDS */
+
+.card {
+
+    height: 100px;
+
+    background: #2563eb;
+
+    border-radius: 10px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-size: 40px;
+
+    cursor: pointer;
+
+    transition: transform 0.2s;
+
+}
+
+
+/* CARD HOVER */
+
+.card:hover {
+
+    transform: scale(1.05);
+
+}
+
+
+/* HIDDEN CARD */
+
+.card.hidden {
+
+    background: #374151;
+
+    color: transparent;
+
+}
+
+
+/* MATCHED CARD */
+
+.card.matched {
+
+    background: #16a34a;
+
+    cursor: default;
+
+}
+
+
+/* BUTTON */
+
+button {
+
+    margin-top: 20px;
+
+    padding: 12px 25px;
+
+    font-size: 18px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+}
+
+
+#message {
+
+    margin-top: 20px;
+
+    font-size: 20px;
+
+    font-weight: bold;
+
+}
+
+
+@media (max-width: 500px) {
+
+    .card {
+
+        height: 75px;
+
+        font-size: 30px;
+
+    }
+
+}
+________________________________________
+
